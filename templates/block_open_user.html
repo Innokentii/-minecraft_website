@@ -1,0 +1,79 @@
+{% extends "Minecraft.html" %}
+
+{% block main %}
+
+<div>
+    <div class="block_open_1">
+        <div id="profile_id" onclick="safety_open()"><div>Профиль</div></div>
+        <div id="safety_id" onclick="profile_open()"><div>Безопасность</div></div>
+    </div>
+    <div class="block_open_2" id="block_open_2_id">
+        <div class="frame_1492873316">
+            <div>Ваши данные</div>
+            <div>Информация об аккаунте</div>
+            <hr color="#E1E1E1">
+            <div>
+                <table>
+                    <thead class="table_1">
+                        <tr>
+                            <td>Ник</td>
+                            <td>username</td>
+                        </tr>
+                        <tr>
+                            <td>Email</td>
+                            <td>username@email.com</td>
+                        </tr>
+                        <tr>
+                            <td>Id</td>
+                            <td>123456789</td>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+        </div>
+        <div class="frame_1492873314">
+            <div>История покупок</div>
+            <div>Информация о совершенных покупках</div>
+            <hr color="#E1E1E1">
+        </div>
+        <div class="frame_1492873314">
+            <div>Подарки</div>
+            <div>Информация о подарках</div>
+            <hr color="#E1E1E1">
+        </div>
+    </div>
+    <div class="block_open_3" id="block_open_3_id">
+        <div class="frame_1492873316_1">
+            <div>Пароль</div>
+            <div>Рекомендуем периодически обновлять пароль, чтобы повысить безопасность аккаунта</div>
+            <hr color="#E1E1E1">
+            <div class="frame_1492873316_2">
+                <div>Текущий пароль</div>
+                <input type="text">
+                <div>Новый пароль</div>
+                <input type="text">
+                <div>Повтор нового пароля</div>
+                <input type="text">
+            </div>
+            <div class="block_open_3_buttom"></div>
+        </div>
+        <div>
+            <div class="frame_1492873317">
+                <div>Пароль</div>
+                <div>Изменить Email можно через поддержку</div>
+                <hr color="#E1E1E1">
+                <div>Текущий Email</div>
+                <input type="text" value="username@email.com" disabled>
+            </div>
+            <div class="frame_1492873318">
+                <div>Двухэтапная аутентификация</div>
+                <div>Дополнительная защита вашего аккаунта</div>
+                <hr color="#E1E1E1">
+                <div>Помимо пароля, для входа также будет требоваться одноразовый еод из приложения.</div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
